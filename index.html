@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Twitch emote tester</title>
+    <link rel="stylesheet" href="css/main.css"> 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css" integrity="sha384-PDle/QlgIONtM1aqA2Qemk5gPOE7wFq8+Em+G/hmo5Iq0CCmYZLv3fVRDJ4MMwEA" crossorigin="anonymous">
+
+</head>
+<body>
+    <div id="siteHeader" class="container-fluid header">
+        <div class="row pb-2">
+            <div class="col">
+                <h1 class="display-h6 text-center">Twitch emote tester</h1>
+                <div class="form-inline justify-content-center">
+                    <div class="form-group">
+                        <label for="campo-emote">Emote URL:</label>
+                        <input type="text" class="form-control mx-1" name="emote" id="campo-emote" placeholder="https://i.imgur.com/123456.png">
+                        <button onclick="setEmote()" class="btn btn-primary">Submit</button>
+                    </div>
+                </div>
+                <div class="text-center mt-2"><small>Made by <a href="https://github.com/MadLunarii">MadLunarii</a></small></div> 
+            </div>
+        </div>
+    </div>
+    <div id="chat" class="container-fluid invisible">
+        <div class="row">
+            <div class="col chat">
+                <div class="chat-header">
+                    LunariiMad
+                </div>
+                <div class="lines">
+
+                    <div class="line">
+                        <span class="badges">
+                            <div class="badge mod">
+                                
+                            </div>
+                            <div class="badge sub">
+                                
+                            </div>
+                        </span>
+                        <span class="timestamp">
+                            <small>14:07</small>
+                        </span>
+                        <span class="nickname">
+                            LunariiMad
+                        </span>
+                        <span class="message">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        </span>
+                    </div>
+
+                    <div class="line">
+                        <span class="badges">
+                            <div class="badge mod">
+                                
+                            </div>
+                            <div class="badge sub">
+                                
+                            </div>
+                        </span>
+                        <span class="timestamp">
+                            <small>14:07</small>
+                        </span>
+                        <span class="nickname">
+                            LunariiMad
+                        </span>
+                        <span class="message">
+                            <img src="images/emote1.png" class="emote"> Lorem ipsum dolor sit amet <img src="" class="emote user-emote"> consectetur adipiscing elit. <img src="images/emote2.png" class="emote">
+                        </span>
+                    </div>
+                    
+                    <div class="line">
+                        <span class="badges">
+                            <div class="badge mod">
+                            
+                            </div>
+                            <div class="badge sub">
+                                
+                            </div>
+                        </span>
+                        <span class="timestamp">
+                            <small>14:07</small>
+                        </span>
+                        <span class="nickname">
+                            LunariiMad
+                        </span>
+                        <span class="message">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. <img src="" class="emote user-emote"> 
+                        </span>
+                    </div>
+                    
+                    <div class="line">
+                        <span class="badges">
+                            <div class="badge mod">
+                                
+                            </div>
+                            <div class="badge sub">
+                                
+                            </div>
+                        </span>
+                        <span class="timestamp">
+                            <small>14:07</small>
+                        </span>
+                        <span class="nickname">
+                            LunariiMad
+                        </span>
+                        <span class="message">
+                            <img src="images/emote1.png" class="emote"> <img src="" class="emote user-emote"> <img src="images/emote2.png" class="emote">
+                        </span>
+                    </div>
+    
+                    <div class="line">
+                        <span class="badges">
+                            <div class="badge mod">
+                            
+                            </div>
+                            <div class="badge sub">
+                                
+                            </div>
+                        </span>
+                        <span class="timestamp">
+                            <small>14:07</small>
+                        </span>
+                        <span class="nickname">
+                            LunariiMad
+                        </span>
+                        <span class="message">
+                            Strimi pedale 
+                        </span>
+                    </div>
+    
+                    <div class="line">
+                        <span class="badges">
+                            <div class="badge mod">
+                                
+                            </div>
+                            <div class="badge sub">
+                                
+                            </div>
+                        </span>
+                        <span class="timestamp">
+                            <small>14:07</small>
+                        </span>
+                        <span class="nickname">
+                            LunariiMad
+                        </span>
+                        <span class="message">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        </span>
+                    </div>
+
+                    <div class="line">
+                        <span class="badges">
+                            <div class="badge mod">
+                                
+                            </div>
+                            <div class="badge sub">
+                                
+                            </div>
+                        </span>
+                        <span class="timestamp">
+                            <small>14:07</small>
+                        </span>
+                        <span class="nickname">
+                            LunariiMad
+                        </span>
+                        <span class="message">
+                            <img src="images/emote1.png" class="emote"> Lorem ipsum dolor sit amet <img src="" class="emote user-emote"> consectetur adipiscing elit. <img src="images/emote2.png" class="emote">
+                        </span>
+                    </div>
+                    
+                    <div class="line">
+                        <span class="badges">
+                            <div class="badge mod">
+                            
+                            </div>
+                            <div class="badge sub">
+                                
+                            </div>
+                        </span>
+                        <span class="timestamp">
+                            <small>14:07</small>
+                        </span>
+                        <span class="nickname">
+                            LunariiMad
+                        </span>
+                        <span class="message">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. <img src="" class="emote user-emote"> 
+                        </span>
+                    </div>
+                    
+                    <div class="line">
+                        <span class="badges">
+                            <div class="badge mod">
+                                
+                            </div>
+                            <div class="badge sub">
+                                
+                            </div>
+                        </span>
+                        <span class="timestamp">
+                            <small>14:07</small>
+                        </span>
+                        <span class="nickname">
+                            LunariiMad
+                        </span>
+                        <span class="message">
+                            <img src="images/emote1.png" class="emote"> <img src="" class="emote user-emote"> <img src="images/emote2.png" class="emote">
+                        </span>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="col chat-dark">
+                <div class="chat-header">
+                    LunariiMad
+                </div>
+                <div class="lines">
+
+                    <div class="line">
+                        <span class="badges">
+                            <div class="badge mod">
+                                
+                            </div>
+                            <div class="badge sub">
+                                
+                            </div>
+                        </span>
+                        <span class="timestamp">
+                            <small>14:07</small>
+                        </span>
+                        <span class="nickname">
+                            LunariiMad
+                        </span>
+                        <span class="message">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        </span>
+                    </div>
+
+                    <div class="line">
+                        <span class="badges">
+                            <div class="badge mod">
+                                
+                            </div>
+                            <div class="badge sub">
+                                
+                            </div>
+                        </span>
+                        <span class="timestamp">
+                            <small>14:07</small>
+                        </span>
+                        <span class="nickname">
+                            LunariiMad
+                        </span>
+                        <span class="message">
+                            <img src="images/emote1.png" class="emote"> Lorem ipsum dolor sit amet <img src="" class="emote user-emote"> consectetur adipiscing elit. <img src="images/emote2.png" class="emote">
+                        </span>
+                    </div>
+                    
+                    <div class="line">
+                        <span class="badges">
+                            <div class="badge mod">
+                            
+                            </div>
+                            <div class="badge sub">
+                                
+                            </div>
+                        </span>
+                        <span class="timestamp">
+                            <small>14:07</small>
+                        </span>
+                        <span class="nickname">
+                            LunariiMad
+                        </span>
+                        <span class="message">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. <img src="" class="emote user-emote"> 
+                        </span>
+                    </div>
+                    
+                    <div class="line">
+                        <span class="badges">
+                            <div class="badge mod">
+                                
+                            </div>
+                            <div class="badge sub">
+                                
+                            </div>
+                        </span>
+                        <span class="timestamp">
+                            <small>14:07</small>
+                        </span>
+                        <span class="nickname">
+                            LunariiMad
+                        </span>
+                        <span class="message">
+                            <img src="images/emote1.png" class="emote"> <img src="" class="emote user-emote"> <img src="images/emote2.png" class="emote">
+                        </span>
+                    </div>
+    
+                    <div class="line">
+                        <span class="badges">
+                            <div class="badge mod">
+                            
+                            </div>
+                            <div class="badge sub">
+                                
+                            </div>
+                        </span>
+                        <span class="timestamp">
+                            <small>14:07</small>
+                        </span>
+                        <span class="nickname">
+                            LunariiMad
+                        </span>
+                        <span class="message">
+                            Strimi pedale 
+                        </span>
+                    </div>
+    
+                    <div class="line">
+                        <span class="badges">
+                            <div class="badge mod">
+                                
+                            </div>
+                            <div class="badge sub">
+                                
+                            </div>
+                        </span>
+                        <span class="timestamp">
+                            <small>14:07</small>
+                        </span>
+                        <span class="nickname">
+                            LunariiMad
+                        </span>
+                        <span class="message">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        </span>
+                    </div>
+
+                    <div class="line">
+                        <span class="badges">
+                            <div class="badge mod">
+                                
+                            </div>
+                            <div class="badge sub">
+                                
+                            </div>
+                        </span>
+                        <span class="timestamp">
+                            <small>14:07</small>
+                        </span>
+                        <span class="nickname">
+                            LunariiMad
+                        </span>
+                        <span class="message">
+                            <img src="images/emote1.png" class="emote"> Lorem ipsum dolor sit amet <img src="" class="emote user-emote"> consectetur adipiscing elit. <img src="images/emote2.png" class="emote">
+                        </span>
+                    </div>
+                    
+                    <div class="line">
+                        <span class="badges">
+                            <div class="badge mod">
+                            
+                            </div>
+                            <div class="badge sub">
+                                
+                            </div>
+                        </span>
+                        <span class="timestamp">
+                            <small>14:07</small>
+                        </span>
+                        <span class="nickname">
+                            LunariiMad
+                        </span>
+                        <span class="message">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. <img src="" class="emote user-emote"> 
+                        </span>
+                    </div>
+                    
+                    <div class="line">
+                        <span class="badges">
+                            <div class="badge mod">
+                                
+                            </div>
+                            <div class="badge sub">
+                                
+                            </div>
+                        </span>
+                        <span class="timestamp">
+                            <small>14:07</small>
+                        </span>
+                        <span class="nickname">
+                            LunariiMad
+                        </span>
+                        <span class="message">
+                            <img src="images/emote1.png" class="emote"> <img src="" class="emote user-emote"> <img src="images/emote2.png" class="emote">
+                        </span>
+                    </div>
+                </div>
+                
+                    
+            </div>
+        </div>
+    </div>
+    <script>
+        function setEmote(){
+            $(".user-emote").attr("src", $("#campo-emote").val());
+            $("#chat").removeClass("invisible");
+        }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/js/bootstrap.min.js" integrity="sha384-7aThvCh9TypR7fIc2HV4O/nFMVCBwyIUKL8XCtKE+8xgCgl/PQGuFsvShjr74PBp" crossorigin="anonymous"></script>
+</body>
+</html>
