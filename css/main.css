@@ -90,6 +90,10 @@ small{
     font-weight: bolder;
 }
 
+.message{
+    margin-left:-3px;
+}
+
 .message::before{
     content: ": ";
 }
